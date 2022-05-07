@@ -38,6 +38,8 @@ predicao = dtc.predict_proba(df)
 
 predicao = pd.DataFrame(predicao)
 
+predicao = predicao.apply(lambda x : x*100)
+
 predicao.rename({
      0: 'Iris-setosa',
      1: 'Iris-Versicolor',
