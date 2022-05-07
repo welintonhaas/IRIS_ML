@@ -17,8 +17,8 @@ with open("objetos.pkl", 'rb') as arquivo:
   ss, dtc = pickle.load(arquivo)
 
 estrutura = { 'comp_sepala': comp_sepala, 
-              'comp_petala': comp_petala,
               'larg_sepala': larg_sepala,
+              'comp_petala': comp_petala,
               'larg_petala': larg_petala }
 
 df = pd.DataFrame(estrutura, index=[0])
