@@ -29,4 +29,4 @@ st.write(df)
 # predição
 predicao = dtc.predict(df)
 st.write('A classe dessa flor é: ')
-st.write(predicao)
+st.write(predicao[0])
